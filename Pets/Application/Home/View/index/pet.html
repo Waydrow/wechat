@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>商品修改</title>
+    <load href="__PUBLIC__/utf8-php/ueditor.config.js"/>
+    <load href="__PUBLIC__/utf8-php/ueditor.all.min.js"/>
+    <load href="__PUBLIC__/utf8-php/lang/zh-cn/zh-cn.js"/>
+    <link rel="stylesheet" href="__PUBLIC__/css/jquery.fileupload.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/jquery.fileupload-ui.css">
+    <script src="__PUBLIC__/lib/jquery-1.11.1.min.js"></script>
+    <script src="__PUBLIC__/js/vendor/jquery.ui.widget.js"></script>
+    <script src="__PUBLIC__/js/jquery.fileupload.js"></script>
+    <script src="__PUBLIC__/js/jquery.iframe-transport.js"></script>
+    <!--引入CSS-->
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/webuploader-0.1.5/webuploader.css">
+    <!--引入JS-->
+    <script type="text/javascript" src="__PUBLIC__/webuploader-0.1.5/webuploader.js"></script>
+
+    <!-- ZUI 标准版压缩后的 CSS 文件 -->
+    <link rel="stylesheet" href="__PUBLIC__/datepicker/datetimepicker.min.css">
+
+</head>
+
+<body class=" theme-blue">
+<!-- Demo page code -->
+<script type="text/javascript">
+    $(function () {
+        var match = document.cookie.match(new RegExp('color=([^;]+)'));
+        if (match) var color = match[1];
+        if (color) {
+            $('body').removeClass(function (index, css) {
+                return (css.match(/\btheme-\S+/g) || []).join(' ')
+            })
+            $('body').addClass('theme-' + color);
+        }
+
+        $('[data-popover="true"]').popover({
+            html: true
+        });
+
+    });
+</script>
+<style type="text/css">
+    #line-chart {
+        height: 300px;
+        width: 800px;
+        margin: 0px auto;
+        margin-top: 1em;
+    }
+
+    .navbar-default .navbar-brand,
+    .navbar-default .navbar-brand:hover {
+        color: #fff;
+    }
+    .careworker {
+        margin-right: 10px;
+    }
+
+</style>
+<script type="text/javascript">
+    $(function () {
+        var uls = $('.sidebar-nav > ul > *').clone();
+        uls.addClass('visible-xs');
+        $('#main-menu').append(uls.clone());
+    });
+</script>
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!-- Le fav and touch icons -->
+<link rel="shortcut icon" href="../assets/ico/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+<!--[if lt IE 7 ]>
+<body class="ie ie6"> <![endif]-->
+<!--[if IE 7 ]>
+<body class="ie ie7 "> <![endif]-->
+<!--[if IE 8 ]>
+<body class="ie ie8 "> <![endif]-->
+<!--[if IE 9 ]>
+<body class="ie ie9 "> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<!--<![endif]-->
+<div class="header">
+    <h1 class="page-title">宠物</h1>
+    <ul class="breadcrumb">
+        <li><a href="{:U("Home/Index/index")}">主页</a> </li>
+        <li><a href="{:U("Home/Index/petslist")}">宠物列表</a> </li>
+        <li class="active">宠物添加</li>
+    </ul>
+</div>
+<div class="main-content">
+    <form id="form1" action="" enctype="multipart/form-data" method="post">
+        <!--<input type="hidden" id="id" value="{$id}"/>-->
+        <div class="row">
+            <div class="col-md-4">
+                <br>
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane active in" id="home">
+                        <div class="form-group">
+                            <label>宠物图片</label>
+                            <br>
+                            <img src="{$list[0].img}" id="firstphopo">
+                            <div id="fileList" class="uploader-list"></div>
+
+                            <div id="filePicker">选择图片</div>
+                            <div class="btn btn-primary" id="clear_img">清除图片</div>
+                            <input type="hidden" id="temp" name="pp"/>
+                        </div>
+                        <div class="form-group">
+                            <label>宠物名</label>
+                            <input type="text" id="petsname" name="petsname" class="form-control" value="{$list[0].petname}">
+                        </div>
+                        <div class="form-group">
+                            <label>所属房间</label>
+                            <select name="roomsclassify" id="roomsclassify" class="form-control">
+                                <volist name="classify" id="mode2">
+                                    <option {$mode2.se} value="{$mode2.id}">{$mode2.name}</option>
+                                </volist>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>选择护工</label>
+                            <br>
+                            <volist name="cares" id="care_mod">
+                                <label class="careworker"><input type="checkbox" name="careworkers[]" value="{$care_mod.id}" {$care_mod.check}>{$care_mod.name}</label>
+                            </volist>
+                        </div>
+                        <div class="form-group">
+                            <label>种类</label>
+                            <input type="text" id="category" name="category" class="form-control" value="{$list[0].breed}">
+                        </div>
+                        <div class="form-group">
+                            <label>年龄</label>
+                            <input type="text" id="age" name="age" class="form-control" value="{$list[0].age}">
+                        </div>
+						<div class="form-group">
+                            <label>性格</label>
+                            <input type="text" id="character" name="character" class="form-control" value="{$list[0].character}">
+                        </div>
+                        <div class="form-group">
+                            <label>性别</label>
+							<select name="sex" id="sex">
+								<option value="m" {$list[0].male}>雄性</option>
+								<option value="f" {$list[0].female}>雌性</option>
+							</select>
+                        </div>
+                        <div class="form-group">
+                            <label>到达时间</label>
+                            <input type="text" id="entertime" name="entertime" placeholder="点我" class="form-control form-date" readonly value="{$list[0].entertime}">
+                        </div>
+                        <div class="btn-toolbar list-toolbar">
+                            <button class="btn btn-primary" id="save" name="save"><i class="fa fa-save"></i> 保存</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal small fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h3 id="myModalLabel">删除确认</h3>
+                    </div>
+                    <div class="modal-body">
+                        <p class="error-text"><i class="fa fa-warning modal-icon"></i>确定要删除这个宠物？</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal" aria-hidden="true">取消</button>
+                        <button class="btn btn-danger" name="delete" onclick="form1.action='__SELF__';form1.submit();"
+                                data-dismiss="modal">删除
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="__PUBLIC__/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="__PUBLIC__/lib/jquery-1.11.1.min.js"></script>
+    <!-- ZUI 标准版压缩后的 JavaScript 文件 -->
+    <script src="__PUBLIC__/datepicker/datetimepicker.min.js"></script>
+    <script type="text/javascript">
+        $("#save").on("click", function(){
+            var image = $('#firstphopo')[0].src;
+            if(image.equals("")) {
+                return;
+            }
+            var index = image.indexOf("__ROOT__");
+            var returnStr = image.substring(index);
+            alert(returnStr);
+            $("#temp").attr("value", returnStr);
+            $('#form1').submit();
+        });
+    </script>
+    <script>
+        $("#clear_img").on('click', function() {
+            $('#firstphopo').attr('src', "");
+        })
+    </script>
+    <script type="text/javascript" >
+        // 日期选择插件
+        $(".form-date").datetimepicker(
+                {
+                    language:  "zh-CN",
+                    weekStart: 1,
+                    todayBtn:  1,
+                    autoclose: 1,
+                    todayHighlight: 1,
+                    startView: 2,
+                    minView: 2,
+                    forceParse: 0,
+                    format: "yyyy-mm-dd"
+                });
+    </script>
+    <script type="text/javascript">
+        jQuery(function () {
+            var $ = jQuery,
+                    $list = $('#fileList'),
+            // 优化retina, 在retina下这个值是2
+                    ratio = window.devicePixelRatio || 1,
+
+            // 缩略图大小
+                    thumbnailWidth = 100 * ratio,
+                    thumbnailHeight = 100 * ratio,
+
+            // Web Uploader实例
+                    uploader;
+
+            // 初始化Web Uploader
+            uploader = WebUploader.create({
+
+                // 自动上传。
+                auto: true,
+
+                // swf文件路径
+                swf: '__PUBLIC__/webuploader-0.1.5/Uploader.swf',
+
+                // 文件接收服务端。
+                server: '__PUBLIC__/webuploader-0.1.5/fileupload.php',
+
+                // 选择文件的按钮。可选。
+                // 内部根据当前运行是创建，可能是input元素，也可能是flash.
+                pick: '#filePicker',
+
+                // 只允许选择文件，可选。
+                accept: {
+                    title: 'Images',
+                    extensions: "gif,jpg,jpeg,png",
+                    mimeTypes: ".gif,.jpg,.jpeg,.png"
+                }
+            });
+
+            // 当有文件添加进来的时候
+
+
+            // 文件上传过程中创建进度条实时显示。
+            uploader.on('uploadProgress', function (file, percentage) {
+                var $li = $('#' + file.id),
+                        $percent = $li.find('.progress span');
+
+                // 避免重复创建
+                if (!$percent.length) {
+                    $percent = $('<p class="progress"><span></span></p>')
+                            .appendTo($li)
+                            .find('span');
+                }
+
+                $percent.css('width', percentage * 100 + '%');
+            });
+
+            // 文件上传成功，给item添加成功class, 用样式标记上传成功。
+            uploader.on('uploadSuccess', function (file, ret) {
+                $('#' + file.id).addClass('upload-state-done');
+                var url = ret.url;
+                console.log(file.id);
+                console.log('ttteee: ' + url);
+                url = url.replace('\\', "/")
+                $('#firstphopo').attr("src", "__PUBLIC__/webuploader-0.1.5/" + url);
+                $('#temp').attr('value', "__PUBLIC__/webuploader-0.1.5/" + url);
+            });
+
+            // 文件上传失败，现实上传出错。
+            uploader.on('uploadError', function (file) {
+                var $li = $('#' + file.id),
+                        $error = $li.find('div.error');
+
+                // 避免重复创建
+                if (!$error.length) {
+                    $error = $('<div class="error"></div>').appendTo($li);
+                }
+
+                $error.text('上传失败');
+            });
+
+            // 完成上传完了，成功或者失败，先删除进度条。
+            uploader.on('uploadComplete', function (file) {
+                $('#' + file.id).find('.progress').remove();
+            });
+        });
+    </script>
+</body>
+
+</html>

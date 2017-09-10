@@ -1,0 +1,6 @@
+[ 2016-12-02T11:06:16+08:00 ] ::1 /Pets/index.php/Application/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+ERR: 无法加载模块:Application
+

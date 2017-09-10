@@ -1,0 +1,53 @@
+<div class="row">
+    <div class="col-md-4">
+        <br>
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane active in" id="home">
+                <form id="tab" method='post' onsubmit="return checkUser();">
+                    <div class="form-group">
+                        <label>昵称</label>
+                        <input type="text" name="name" id="username" value="{$list[0]['adminname']}" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>帐号</label>
+                        <input type="text" name="account" id="account" value="{$list[0]['adminaccount']}"
+                               class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>密码</label>
+                        <input type="password" name="password" id="password" class="form-control">
+                    </div>
+            </div>
+
+            <div class="btn-toolbar list-toolbar">
+                <button class="btn btn-primary" name="save" id="save"><i class="fa fa-save"></i> 保存</button>
+                <a class="btn btn-primary" href="javascript:history.go(-1);">返回</a>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    function checkUser() {
+        var name = $("#username").val();
+        var account = $("#account").val();
+        var password = $("#password").val();
+        if (name == "") {
+            alert("昵称不能为空");
+            return false;
+        }
+        if (account == "") {
+            alert("帐号不能为空");
+            return false;
+        }
+        if (password.trim() == "") {
+            alert("密码不能为空");
+            return false;
+        }
+        if (password.length <= 2) {
+            alert("密码不能少于等于2位");
+            return false;
+        }
+        return true;
+    }
+</script>

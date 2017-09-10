@@ -1,0 +1,42 @@
+.cards {
+    margin: 0;
+}
+.card-heading {
+    text-align: center;
+    font-size: 1.5em;
+}
+.head-tag {
+    width: 100%;
+    background-color: #3caeff;
+}
+.head-tag p {
+    color: #fff;
+    font-size: 1.6em;
+    text-align: center;
+    padding: 6px 0;
+}
+
+.pet-img {
+    width: 100%;
+}
+
+.pet-img img {
+    display: block;
+    margin: 0 auto;
+}
+
+.pet-info {
+    margin: 1em 0 0 2em;
+}
+
+.pet-info p {
+    font-size: 1.5em;
+}
+
+.btn-primary {
+    background-color: #3280fc !important;
+    border-color: #1970fc !important;
+    width: 90% !important;
+    margin: 0 auto;
+    padding: 12px 0;
+}

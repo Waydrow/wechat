@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col-md-4">
+        <br>
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane active in" id="home">
+                <form id="tab" method='post'>
+                    <div class="form-group">
+                        <label>房间名</label>
+                        <input type="text" name="name" id="name" value="{$list[0].name}"
+                               class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>房间容量</label>
+                        <input type="text" name="capacity" id="capacity" value="{$list[0].capacity}" class="form-control">
+                    </div>
+            </div>
+        </div>
+
+        <div class="btn-toolbar list-toolbar">
+            <button class="btn btn-primary" name="save"><i class="fa fa-save"></i> 保存</button>
+            <a class="btn btn-primary" href="javascript:history.go(-1);">返回</a>
+        </div>
+        </form>
+    </div>
+</div>
+
+
+
+

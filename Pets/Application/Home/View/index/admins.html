@@ -1,0 +1,25 @@
+
+<table class="table" style="width: 800px">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>用户名</th>
+      <th>帐号</th>
+      <th>权限</th>
+      <th style="width: 3.5em;"></th>
+    </tr>
+  </thead>
+  <tbody>
+       <volist name="list" id="vo"  >
+      <tr>
+        <td>{$i}</td>
+        <td>{$vo.adminname}</td>
+        <td>{$vo.adminaccount}</td>
+        <td>1</td>
+          <td>
+      <a href="{:U("Home/Index/admin?id=$vo[id]")}"><i class="fa fa-pencil"></i></a>
+          </td>
+      </tr>
+    </volist>
+  </tbody>
+</table>

@@ -1,0 +1,30 @@
+[ 2016-12-06T18:47:53+08:00 ] ::1 /Pets/index.php/%20Home/Index/petslist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+ERR: 无法加载模块: Home
+
+[ 2016-12-06T18:49:07+08:00 ] ::1 /Pets/index.php/%20Home/Index/petslist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+ERR: 无法加载模块: Home
+
+[ 2016-12-06T18:49:27+08:00 ] ::1 /Pets/index.php/%20Home/Index/petslist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+ERR: 无法加载模块: Home
+
+[ 2016-12-06T18:49:32+08:00 ] ::1 /Pets/index.php/%20Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+ERR: 无法加载模块: Home
+
+[ 2016-12-06T18:50:01+08:00 ] ::1 /Pets/index.php/%20Home/Index/petslist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+ERR: 无法加载模块: Home
+

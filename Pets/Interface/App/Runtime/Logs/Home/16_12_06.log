@@ -1,0 +1,160 @@
+[ 2016-12-06T17:22:35+08:00 ] 222.195.145.151 /Pets/Interface/index.php/Home/Index/appGetPets
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+SQL: SHOW COLUMNS FROM `pet` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `pet`  [ RunTime:0.0003s ]
+
+[ 2016-12-06T17:23:40+08:00 ] 222.195.145.151 /Pets/Interface/index.php/Home/Index/appGetPets
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+SQL: SHOW COLUMNS FROM `pet` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `pet`  [ RunTime:0.0003s ]
+
+[ 2016-12-06T17:24:06+08:00 ] 222.195.145.151 /Pets/Interface/index.php/Home/Index/appGetPets
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000793s ]
+SQL: SHOW COLUMNS FROM `pet` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `pet`  [ RunTime:0.0003s ]
+
+[ 2016-12-06T17:26:03+08:00 ] 222.195.145.151 /Pets/Interface/index.php/Home/Index/appGetPets
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+SQL: SHOW COLUMNS FROM `pet` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `pet`  [ RunTime:0.0002s ]
+
+[ 2016-12-06T17:26:06+08:00 ] 222.195.145.151 /Pets/Interface/index.php/Home/Index/appGetPetById?pet_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `pet` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `pet` WHERE ( id='1' )  [ RunTime:0.0004s ]
+
+[ 2016-12-06T17:27:22+08:00 ] 222.195.145.151 /Pets/Interface/index.php/Home/Index/appGetPets
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+SQL: SHOW COLUMNS FROM `pet` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `pet`  [ RunTime:0.0002s ]
+
+[ 2016-12-06T17:27:23+08:00 ] 222.195.145.151 /Pets/Interface/index.php/Home/Index/appGetPetById?pet_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000836s ]
+SQL: SHOW COLUMNS FROM `pet` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `pet` WHERE ( id='1' )  [ RunTime:0.0004s ]
+
+[ 2016-12-06T17:31:26+08:00 ] 222.195.145.151 /Pets/Interface/index.php/Home/Index/appGetPets
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `pet` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `pet`  [ RunTime:0.0003s ]
+
+[ 2016-12-06T17:31:29+08:00 ] 222.195.145.151 /Pets/Interface/index.php/Home/Index/appGetPetById?pet_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000585s ]
+SQL: SHOW COLUMNS FROM `pet` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `pet` WHERE ( id='1' )  [ RunTime:0.0003s ]
+
+[ 2016-12-06T17:34:38+08:00 ] 222.195.145.151 /Pets/Interface/index.php/Home/Index/appGetPets
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+SQL: SHOW COLUMNS FROM `pet` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `pet`  [ RunTime:0.0002s ]
+
+[ 2016-12-06T17:34:39+08:00 ] 222.195.145.151 /Pets/Interface/index.php/Home/Index/appGetPetById?pet_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+SQL: SHOW COLUMNS FROM `pet` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `pet` WHERE ( id='1' )  [ RunTime:0.0005s ]
+
+[ 2016-12-06T17:35:24+08:00 ] 222.195.145.151 /Pets/Interface/index.php/Home/Index/appGetPets
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `pet` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `pet`  [ RunTime:0.0002s ]
+
+[ 2016-12-06T17:35:25+08:00 ] 222.195.145.151 /Pets/Interface/index.php/Home/Index/appGetPetById?pet_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+SQL: SHOW COLUMNS FROM `pet` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `pet` WHERE ( id='1' )  [ RunTime:0.0005s ]
+
+[ 2016-12-06T17:35:35+08:00 ] 222.195.145.151 /Pets/Interface/index.php/Home/Index/appGetPets
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000823s ]
+SQL: SHOW COLUMNS FROM `pet` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `pet`  [ RunTime:0.0002s ]
+
+[ 2016-12-06T17:35:43+08:00 ] 222.195.145.151 /Pets/Interface/index.php/Home/Index/appGetPets
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+SQL: SHOW COLUMNS FROM `pet` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `pet`  [ RunTime:0.0002s ]
+
+[ 2016-12-06T17:38:44+08:00 ] 222.195.145.151 /Pets/Interface/index.php/Home/Index/appGetPetById?pet_id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000679s ]
+SQL: SHOW COLUMNS FROM `pet` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `pet` WHERE ( id='1' )  [ RunTime:0.0004s ]
+

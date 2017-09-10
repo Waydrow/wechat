@@ -1,0 +1,38 @@
+<div class="header">
+    <h1 class="page-title">护工-宠物</h1>
+    <ul class="breadcrumb">
+        <li><a href="{:U("Home/Index/index")}">主页</a> </li>
+        <li class="active">照料列表</li>
+    </ul>
+</div>
+<table class="table" style="width: 60%;">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>护工</th>
+        <th style="width: 30%;">宠物名字</th>
+        <th style="width: 3.5em;"></th>
+    </tr>
+    </thead>
+    <tbody>
+    <volist name="list" id="vo">
+        <tr>
+            <td>{$i}</td>
+            <td>{$vo.careworker_name}</td>
+            <td>{$vo.pet_name}</td>
+            <td>
+                <a href="{:U("Home/Index/deletelookafter?id=$vo[id]")}" role="button" data-toggle="modal"
+                onclick="del();"><i class="fa fa-trash-o"></i></a>
+            </td>
+        </tr>
+    </volist>
+    </tbody>
+</table>
+
+<script type="text/javascript">
+    function del() {
+        if (!confirm("确认要删除？")) {
+            window.event.returnValue = false;
+        }
+    }
+</script>

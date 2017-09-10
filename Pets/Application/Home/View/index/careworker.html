@@ -1,0 +1,48 @@
+<div class="row">
+    <div class="col-md-4">
+        <br>
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane active in" id="home">
+                <form id="tab" method='post'>
+                    <div class="form-group">
+                        <label>姓名</label>
+                        <input type="text" name="name" id="name" value="{$list.name}"
+                               class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>性别</label>
+                        <select name="sex" id="sex">
+                            <option value="m" {$list.male}>男</option>
+                            <option value="f" {$list.female}>女</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>电话</label>
+                        <input type="text" name="phone" id="phone" value="{$list.phone}"
+                               class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>身份证号</label>
+                        <input type="text" name="idcard" id="idcard" value="{$list.idcard}"
+                               class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>地址</label>
+                        <textarea name="address" id="address" rows="3"
+                                  class="form-control">{$list.address}</textarea>
+                    </div>
+
+            </div>
+        </div>
+
+        <div class="btn-toolbar list-toolbar">
+            <button class="btn btn-primary" name="save"><i class="fa fa-save"></i> 保存</button>
+            <a class="btn btn-primary" href="javascript:history.go(-1);">返回</a>
+        </div>
+        </form>
+    </div>
+</div>
+
+
+
+

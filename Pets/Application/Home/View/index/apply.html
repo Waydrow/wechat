@@ -1,0 +1,69 @@
+<div class="header">
+    <h1 class="page-title">用户申请</h1>
+    <h2>待处理</h2>
+</div>
+<table class="table" style="width: 60%;">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>申请人姓名</th>
+        <th>申请人帐号</th>
+        <th style="width: 30%;">宠物名字</th>
+        <th>处理</th>
+    </tr>
+    </thead>
+    <tbody>
+    <volist name="list" id="vo">
+        <tr>
+            <td>{$i}</td>
+            <td>{$vo.realname}</td>
+            <td>{$vo.username}</td>
+            <td>{$vo.petname}</td>
+            <td>
+                <a href="{:U("Home/Index/applysuccess?id=$vo[apply_id]")}" role="button" data-toggle="modal"
+                onclick="success();">通过</a>
+                <a href="{:U("Home/Index/applydeny?id=$vo[apply_id]")}" role="button" data-toggle="modal"
+                onclick="deny();">拒绝</a>
+            </td>
+        </tr>
+    </volist>
+    </tbody>
+</table>
+<div class="header">
+    <h2>已处理</h2>
+</div>
+<table class="table" style="width: 60%;">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>申请人姓名</th>
+        <th>申请人帐号</th>
+        <th style="width: 30%;">宠物名字</th>
+        <th>处理结果</th>
+    </tr>
+    </thead>
+    <tbody>
+    <volist name="list_take" id="vot">
+        <tr>
+            <td>{$i}</td>
+            <td>{$vot.realname}</td>
+            <td>{$vot.username}</td>
+            <td>{$vot.petname}</td>
+            <td>{$vot.state}</td>
+        </tr>
+    </volist>
+    </tbody>
+</table>
+
+<script type="text/javascript">
+    function deny() {
+        if (!confirm("确认拒绝吗?")) {
+            window.event.returnValue = false;
+        }
+    }
+    function success() {
+        if(!confirm("确认通过吗?")) {
+            window.event.returnValue = false;
+        }
+    }
+</script>

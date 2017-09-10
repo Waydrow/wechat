@@ -1,0 +1,44 @@
+<div class="header">
+    <h1 class="page-title">领养记录</h1>
+    <ul class="breadcrumb">
+        <li><a href="{:U("Home/Index/index")}">主页</a> </li>
+        <li class="active">领养列表</li>
+    </ul>
+</div>
+<table class="table">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>领养时间</th>
+        <th style="width: 12%;">领养人姓名</th>
+        <th>领养人帐号</th>
+        <th>宠物名</th>
+        <th>宠物种类</th>
+        <th>宠物年龄</th>
+        <th>宠物性别</th>
+        <th style="width: 3.5em;"></th>
+    </tr>
+    </thead>
+    <tbody>
+    <volist name="list_taken" id="vot" key="k">
+        <tr>
+            <td>{$k}</td>
+            <td>{$vot.leavetime}</td>
+            <td>{$vot.realname}</td>
+            <td>{$vot.username}</td>
+            <td>{$vot.petname}</td>
+            <td>{$vot.breed}</td>
+            <td>{$vot.age}</td>
+            <td>{$vot.sex}</td>
+        </tr>
+    </volist>
+    </tbody>
+</table>
+
+<script type="text/javascript">
+    function del() {
+        if (!confirm("确认要删除？")) {
+            window.event.returnValue = false;
+        }
+    }
+</script>

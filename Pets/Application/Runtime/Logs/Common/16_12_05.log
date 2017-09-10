@@ -1,0 +1,48 @@
+[ 2016-12-05T17:11:15+08:00 ] ::1 /Pets/index.php/%20Home/Index/delete/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+ERR: 无法加载模块: Home
+
+[ 2016-12-05T17:11:17+08:00 ] ::1 /Pets/index.php/%20Home/Index/delete/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+ERR: 无法加载模块: Home
+
+[ 2016-12-05T21:48:46+08:00 ] ::1 /Pets/index.php/%20Home/Index/user/id/%24vo%5Bid%5D.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+ERR: 无法加载模块: Home
+
+[ 2016-12-05T21:49:01+08:00 ] ::1 /Pets/index.php/%20Home/Index/user/id/%24vo%5Bid%5D.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+ERR: 无法加载模块: Home
+
+[ 2016-12-05T21:49:24+08:00 ] ::1 /Pets/index.php/%20Home/Index/user/id/%24vo%5Bid%5D.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+ERR: 无法加载模块: Home
+
+[ 2016-12-05T21:49:28+08:00 ] ::1 /Pets/index.php/%20Home/Index/user/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+ERR: 无法加载模块: Home
+
+[ 2016-12-05T21:49:50+08:00 ] ::1 /Pets/index.php/%20Home/Index/user/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+ERR: 无法加载模块: Home
+
+[ 2016-12-05T21:50:00+08:00 ] ::1 /Pets/index.php/%20Home/Index/deleteuser/id/%24vo%5Bid%5D.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+ERR: 无法加载模块: Home
+

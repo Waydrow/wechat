@@ -1,0 +1,211 @@
+[ 2016-12-15T13:06:40+08:00 ] ::1 /Pets/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000928s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000816s ]
+
+[ 2016-12-15T13:06:40+08:00 ] ::1 /Pets/index.php/Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000946s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007620s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007661s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000890s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000848s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000890s ]
+
+[ 2016-12-15T13:06:44+08:00 ] ::1 /Pets/index.php/Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003126s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003153s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000163s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0101s ]
+SQL: SELECT * FROM `admin` WHERE ( adminaccount="222" and adminpassword="bcbe3365e6ac95ea2c0343a2395834dd" )  [ RunTime:0.0013s ]
+
+[ 2016-12-15T13:06:45+08:00 ] ::1 /Pets/index.php/Home/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `admin` WHERE ( adminaccount='222' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `user` ORDER BY id  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/header.html): failed to open stream: No such file or directory D:\Apache24\htdocs\Pets\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/footer.html): failed to open stream: No such file or directory D:\Apache24\htdocs\Pets\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009888s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009946s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000570s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000617s ]
+
+[ 2016-12-15T13:06:47+08:00 ] ::1 /Pets/index.php/Home/Index/petslist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `admin` WHERE ( adminaccount='222' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `pet` [ RunTime:0.0043s ]
+SQL: SELECT pet.id,`petname`,`breed`,`age`,`sex`,`entertime`,room.name roomname FROM pet pet,room room WHERE ( room.id=pet.roomid AND pet.istaken=0 ) ORDER BY roomname  [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/header.html): failed to open stream: No such file or directory D:\Apache24\htdocs\Pets\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/footer.html): failed to open stream: No such file or directory D:\Apache24\htdocs\Pets\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007072s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007118s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000409s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000437s ]
+
+[ 2016-12-15T13:06:50+08:00 ] ::1 /Pets/index.php/Home/Index/pet.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000311s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `admin` WHERE ( adminaccount='222' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `room` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `room` WHERE ( nownum<capacity )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `careworker` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `careworker`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/header.html): failed to open stream: No such file or directory D:\Apache24\htdocs\Pets\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/footer.html): failed to open stream: No such file or directory D:\Apache24\htdocs\Pets\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Undefined variable: id D:\Apache24\htdocs\Pets\Application\Runtime\Cache\Home\2dd8c519fd5178cca0e2dc5b1e19c51f.php 第 284 行.
+NOTIC: [8] Undefined variable: list D:\Apache24\htdocs\Pets\Application\Runtime\Cache\Home\2dd8c519fd5178cca0e2dc5b1e19c51f.php 第 293 行.
+NOTIC: [8] Undefined variable: list D:\Apache24\htdocs\Pets\Application\Runtime\Cache\Home\2dd8c519fd5178cca0e2dc5b1e19c51f.php 第 302 行.
+NOTIC: [8] Undefined index: se D:\Apache24\htdocs\Pets\Application\Runtime\Cache\Home\2dd8c519fd5178cca0e2dc5b1e19c51f.php 第 307 行.
+NOTIC: [8] Undefined index: check D:\Apache24\htdocs\Pets\Application\Runtime\Cache\Home\2dd8c519fd5178cca0e2dc5b1e19c51f.php 第 313 行.
+NOTIC: [8] Undefined index: check D:\Apache24\htdocs\Pets\Application\Runtime\Cache\Home\2dd8c519fd5178cca0e2dc5b1e19c51f.php 第 313 行.
+NOTIC: [8] Undefined index: check D:\Apache24\htdocs\Pets\Application\Runtime\Cache\Home\2dd8c519fd5178cca0e2dc5b1e19c51f.php 第 313 行.
+NOTIC: [8] Undefined index: check D:\Apache24\htdocs\Pets\Application\Runtime\Cache\Home\2dd8c519fd5178cca0e2dc5b1e19c51f.php 第 313 行.
+NOTIC: [8] Undefined index: check D:\Apache24\htdocs\Pets\Application\Runtime\Cache\Home\2dd8c519fd5178cca0e2dc5b1e19c51f.php 第 313 行.
+NOTIC: [8] Undefined variable: list D:\Apache24\htdocs\Pets\Application\Runtime\Cache\Home\2dd8c519fd5178cca0e2dc5b1e19c51f.php 第 317 行.
+NOTIC: [8] Undefined variable: list D:\Apache24\htdocs\Pets\Application\Runtime\Cache\Home\2dd8c519fd5178cca0e2dc5b1e19c51f.php 第 321 行.
+NOTIC: [8] Undefined variable: list D:\Apache24\htdocs\Pets\Application\Runtime\Cache\Home\2dd8c519fd5178cca0e2dc5b1e19c51f.php 第 325 行.
+NOTIC: [8] Undefined variable: list D:\Apache24\htdocs\Pets\Application\Runtime\Cache\Home\2dd8c519fd5178cca0e2dc5b1e19c51f.php 第 330 行.
+NOTIC: [8] Undefined variable: list D:\Apache24\htdocs\Pets\Application\Runtime\Cache\Home\2dd8c519fd5178cca0e2dc5b1e19c51f.php 第 331 行.
+NOTIC: [8] Undefined variable: list D:\Apache24\htdocs\Pets\Application\Runtime\Cache\Home\2dd8c519fd5178cca0e2dc5b1e19c51f.php 第 336 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007137s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007165s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000351s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000378s ]
+
+[ 2016-12-15T13:06:53+08:00 ] ::1 /Pets/index.php/Home/Index/petslist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `admin` WHERE ( adminaccount='222' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `pet` [ RunTime:0.0035s ]
+SQL: SELECT pet.id,`petname`,`breed`,`age`,`sex`,`entertime`,room.name roomname FROM pet pet,room room WHERE ( room.id=pet.roomid AND pet.istaken=0 ) ORDER BY roomname  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/header.html): failed to open stream: No such file or directory D:\Apache24\htdocs\Pets\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/footer.html): failed to open stream: No such file or directory D:\Apache24\htdocs\Pets\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005881s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005909s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000375s ]
+
+[ 2016-12-15T13:09:16+08:00 ] ::1 /Pets/index.php/Home/Index/pet.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `admin` WHERE ( adminaccount='222' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `room` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `room` WHERE ( nownum<capacity )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `careworker` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `careworker`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/header.html): failed to open stream: No such file or directory D:\Apache24\htdocs\Pets\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/footer.html): failed to open stream: No such file or directory D:\Apache24\htdocs\Pets\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+NOTIC: [8] Undefined variable: id D:\Apache24\htdocs\Pets\Application\Runtime\Cache\Home\2dd8c519fd5178cca0e2dc5b1e19c51f.php 第 284 行.
+NOTIC: [8] Undefined variable: list D:\Apache24\htdocs\Pets\Application\Runtime\Cache\Home\2dd8c519fd5178cca0e2dc5b1e19c51f.php 第 293 行.
+NOTIC: [8] Undefined variable: list D:\Apache24\htdocs\Pets\Application\Runtime\Cache\Home\2dd8c519fd5178cca0e2dc5b1e19c51f.php 第 302 行.
+NOTIC: [8] Undefined index: se D:\Apache24\htdocs\Pets\Application\Runtime\Cache\Home\2dd8c519fd5178cca0e2dc5b1e19c51f.php 第 307 行.
+NOTIC: [8] Undefined index: check D:\Apache24\htdocs\Pets\Application\Runtime\Cache\Home\2dd8c519fd5178cca0e2dc5b1e19c51f.php 第 313 行.
+NOTIC: [8] Undefined index: check D:\Apache24\htdocs\Pets\Application\Runtime\Cache\Home\2dd8c519fd5178cca0e2dc5b1e19c51f.php 第 313 行.
+NOTIC: [8] Undefined index: check D:\Apache24\htdocs\Pets\Application\Runtime\Cache\Home\2dd8c519fd5178cca0e2dc5b1e19c51f.php 第 313 行.
+NOTIC: [8] Undefined index: check D:\Apache24\htdocs\Pets\Application\Runtime\Cache\Home\2dd8c519fd5178cca0e2dc5b1e19c51f.php 第 313 行.
+NOTIC: [8] Undefined index: check D:\Apache24\htdocs\Pets\Application\Runtime\Cache\Home\2dd8c519fd5178cca0e2dc5b1e19c51f.php 第 313 行.
+NOTIC: [8] Undefined variable: list D:\Apache24\htdocs\Pets\Application\Runtime\Cache\Home\2dd8c519fd5178cca0e2dc5b1e19c51f.php 第 317 行.
+NOTIC: [8] Undefined variable: list D:\Apache24\htdocs\Pets\Application\Runtime\Cache\Home\2dd8c519fd5178cca0e2dc5b1e19c51f.php 第 321 行.
+NOTIC: [8] Undefined variable: list D:\Apache24\htdocs\Pets\Application\Runtime\Cache\Home\2dd8c519fd5178cca0e2dc5b1e19c51f.php 第 325 行.
+NOTIC: [8] Undefined variable: list D:\Apache24\htdocs\Pets\Application\Runtime\Cache\Home\2dd8c519fd5178cca0e2dc5b1e19c51f.php 第 330 行.
+NOTIC: [8] Undefined variable: list D:\Apache24\htdocs\Pets\Application\Runtime\Cache\Home\2dd8c519fd5178cca0e2dc5b1e19c51f.php 第 331 行.
+NOTIC: [8] Undefined variable: list D:\Apache24\htdocs\Pets\Application\Runtime\Cache\Home\2dd8c519fd5178cca0e2dc5b1e19c51f.php 第 336 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006885s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006908s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000229s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000451s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000486s ]
+
